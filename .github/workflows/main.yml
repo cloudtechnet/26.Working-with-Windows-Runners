@@ -1,15 +1,14 @@
-name: Windows Runner Demo
+name: Checkout Example
 
 on: push
 
 jobs:
-  demo:
+  checkout-demo:
     runs-on: windows-latest
 
-    
     steps:
-      - name: PowerShell Example
-        shell: bash
-        run: |
-          echo running bash
-          pwd
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: List Files
+        run: dir
