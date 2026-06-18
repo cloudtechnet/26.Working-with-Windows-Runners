@@ -6,8 +6,8 @@ jobs:
   checkout-demo:
     runs-on: windows-latest
     steps:
-      - name: Check Versions
+      - name: PowerShell Variables
         run: |
-          dotnet --version
-          node --version
-          git --version
+          $name = "GitHub Actions"
+
+          Write-Host "Welcome to $name"
