@@ -1,0 +1,11 @@
+name: Windows Runner Demo
+
+on: push
+
+jobs:
+  demo:
+    runs-on: windows-latest
+
+    steps:
+      - name: Display Message
+        run: echo "Hello from Windows Runner"
