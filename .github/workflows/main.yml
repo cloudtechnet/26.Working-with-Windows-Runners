@@ -5,11 +5,9 @@ on: push
 jobs:
   checkout-demo:
     runs-on: windows-latest
-
-    
-  steps:
-    - name: Check Versions
-      run: |
-        dotnet --version
-        node --version
-        git --version
+    steps:
+      - name: Check Versions
+        run: |
+          dotnet --version
+          node --version
+          git --version
