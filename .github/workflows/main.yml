@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: PowerShell Example
-        shell: cmd
+        shell: bash
         run: |
-          echo running CMD
-          dir
+          echo running bash
+          pwd
