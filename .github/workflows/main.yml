@@ -6,6 +6,9 @@ jobs:
   demo:
     runs-on: windows-latest
 
+    
     steps:
-      - name: Display Message
-        run: echo "Hello from Windows Runner"
+      - name: PowerShell Example
+        run: |
+          Write-Host "Running PowerShell"
+          Get-Date
